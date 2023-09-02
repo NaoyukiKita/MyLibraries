@@ -7,6 +7,7 @@ import (
     "sort"
 )   
 
+// scans numbers given in a row.
 func ScanArr(N int, arr []int) {
 	var sc *bufio.Scanner = bufio.NewScanner(os.Stdin)
 	sc.Split(bufio.ScanWords)
@@ -19,6 +20,7 @@ func ScanArr(N int, arr []int) {
 	}
 }
 
+// returns keys in ascending order, and corresponding values.
 func MapSort(m map[int]int) ([]int, []int) {
     var keys[] int = make([]int, 0)
 	for k := range m { keys = append(keys, k) }
