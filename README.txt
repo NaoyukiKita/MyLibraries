@@ -1,0 +1,1 @@
+Stored functions for my use.
