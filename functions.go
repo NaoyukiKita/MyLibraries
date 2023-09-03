@@ -32,3 +32,15 @@ func MapSort(m map[int]int) ([]int, []int) {
 	
 	return keys, values
 }
+
+// instantiates 2-dimensional array
+func Init2D(rows, cols int, def int) [][]int {
+	array := make([][]int, rows)
+	for i := range array {
+		array[i] = make([]int, cols)
+		for j := range array[i] {
+			array[i][j] = def
+		}
+	}
+	return array
+}
