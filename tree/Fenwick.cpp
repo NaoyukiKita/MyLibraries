@@ -134,9 +134,8 @@ public:
         copy(init_vec.begin(), init_vec.end(), vec.begin()+capacity-1);
         // back-propagation
         for (int parent = capacity-2; parent >= 0; parent--) {
-            vec[parent] = 
-                vec[_leftChild(parent)]
-                + vec[_rightChild(parent)];
+            vec[parent] = vec[_leftChild(parent)]
+                            + vec[_rightChild(parent)];
         }
     }
 

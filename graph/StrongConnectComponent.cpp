@@ -31,7 +31,6 @@ void visit2(vector<vector <int> >& rev_links,
     int v, int& K) {
     visited[v] = true;
     for (int w : rev_links[v]) {
-        cout << v << " <- " << w << endl;
         if (visited[w]) continue;
         visit2(rev_links, visited, res, w, K);
     }
